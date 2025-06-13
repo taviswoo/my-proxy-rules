@@ -24,9 +24,6 @@ rules+:
 #HDX
   - DOMAIN-SUFFIX,bili.rip,Emby服务
 
-#听书
-  - DOMAIN,audiobook.mefun.org,DIRECT
-
 #音乐
 #南瓜
   - DOMAIN,cn-music.mefun.vip,DIRECT
