@@ -15,7 +15,7 @@ rules+:
 #二次元
   - DOMAIN,media.nijigem.by,Emby服务
 #猫眼
-  - DOMAIN-SUFFIX,https://frre.me,Emby服务
+  - DOMAIN-SUFFIX,frre.me,Emby服务
 #肥牛
   - DOMAIN-SUFFIX,feiniu.lol,Emby服务
 #Youno
