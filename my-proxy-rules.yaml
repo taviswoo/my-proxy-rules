@@ -1,9 +1,41 @@
 rules+:
-  - DOMAIN,baidu.com,DIRECT
-  - DOMAIN-SUFFIX,bili.rip,Emby服务
-  - DOMAIN-SUFFIX,tampermonkey.net,全球加速
+#影视
+#CC
+
+#垃圾
+  - DOMAIN,cf.emby.org,Emby服务
+#卷毛鼠
   - DOMAIN-SUFFIX,jmsuper.com,Emby服务
-  - DOMAIN-SUFFIX,yunti.online,Emby服务
-  - DOMAIN,cn-music.mefun.vip,DIRECT
+#MEFUN
+  - DOMAIN-SUFFIX,once.im,DIRECT
+  - DOMAIN,cfptv.ii00.cc,Emby服务
+  - DOMAIN,cfgtv.ii00.cc,Emby服务
+#墨云阁
+  - DOMAIN,myg.mobaiemby.site,Emby服务
+#二次元
+  - DOMAIN,media.nijigem.by,Emby服务
+#猫眼
+  - DOMAIN-SUFFIX,https://frre.me,Emby服务
+#肥牛
+  - DOMAIN-SUFFIX,feiniu.lol,Emby服务
+#Youno
   - DOMAIN-SUFFIX,younoyes.com,DIRECT
   - DOMAIN,emby.younoyes.com,Emby服务
+#HDX
+  - DOMAIN-SUFFIX,bili.rip,Emby服务
+
+#听书
+  - DOMAIN,audiobook.mefun.org,DIRECT
+
+#音乐
+#南瓜
+  - DOMAIN,cn-music.mefun.vip,DIRECT
+#音海拾贝
+ - DOMAIN,music.makifx.com,DIRECT
+#MeFun
+  - DOMAIN,cn-music.mefun.vip,DIRECT
+
+
+#其他
+  - DOMAIN,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,tampermonkey.net,全球加速
