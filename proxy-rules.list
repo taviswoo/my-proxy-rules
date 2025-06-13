@@ -1,0 +1,29 @@
+# NAME: proxy-rules
+# UPDATED: 2025-06-13
+
+#CC
+
+#垃圾
+  - DOMAIN,cf.emby.org
+#卷毛鼠
+  - DOMAIN-SUFFIX,jmsuper.com
+#MEFUN
+  - DOMAIN,cfptv.ii00.cc
+  - DOMAIN,cfgtv.ii00.cc
+#墨云阁
+  - DOMAIN,myg.mobaiemby.site
+#二次元
+  - DOMAIN,media.nijigem.by
+#猫眼
+  - DOMAIN-SUFFIX,frre.me
+#肥牛
+  - DOMAIN-SUFFIX,feiniu.lol
+#Youno
+  - DOMAIN,emby.younoyes.com
+#HDX
+  - DOMAIN-SUFFIX,bili.rip
+
+#听书
+
+#其他
+  - DOMAIN-SUFFIX,tampermonkey.net
