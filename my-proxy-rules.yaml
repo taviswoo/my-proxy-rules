@@ -1,0 +1,10 @@
+# https://mihomo.party/docs/guide/override/yaml
+rules+:
+  - DOMAIN,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,bili.rip,Emby服务
+  - DOMAIN-SUFFIX,tampermonkey.net,全球加速
+  - DOMAIN-SUFFIX,jmsuper.com,Emby服务
+  - DOMAIN-SUFFIX,yunti.online,Emby服务
+  - DOMAIN,cn-music.mefun.vip,DIRECT
+  - DOMAIN-SUFFIX,younoyes.com,DIRECT
+  - DOMAIN,emby.younoyes.com,Emby服务
