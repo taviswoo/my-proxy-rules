@@ -5,22 +5,22 @@
 #CC
 
 #MeFun
-  - DOMAIN-SUFFIX,once.im
+DOMAIN-SUFFIX,once.im
 
 #Youno
-  - DOMAIN-SUFFIX,younoyes.com
+DOMAIN-SUFFIX,younoyes.com
 
 #听书
-  - DOMAIN,audiobook.mefun.org
+DOMAIN,audiobook.mefun.org
 
 #音乐
 #南瓜
-  - DOMAIN,cn-music.mefun.vip
+DOMAIN,cn-music.mefun.vip
 #音海拾贝
-  - DOMAIN,music.makifx.com
+DOMAIN,music.makifx.com
 #MeFun
-  - DOMAIN,cn-music.mefun.vip
+DOMAIN,cn-music.mefun.vip
 
 
 #其他
-  - DOMAIN,baidu.com
+DOMAIN,baidu.com
