@@ -31,7 +31,7 @@ rules+:
 #南瓜
   - DOMAIN,cn-music.mefun.vip,DIRECT
 #音海拾贝
- - DOMAIN,music.makifx.com,DIRECT
+  - DOMAIN,music.makifx.com,DIRECT
 #MeFun
   - DOMAIN,cn-music.mefun.vip,DIRECT
 
