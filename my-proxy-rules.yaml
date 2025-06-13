@@ -39,3 +39,4 @@ rules+:
 #其他
   - DOMAIN,baidu.com,DIRECT
   - DOMAIN-SUFFIX,tampermonkey.net,全球加速
+  - DOMAIN-SUFFIX,jsdelivr.com,全球加速
