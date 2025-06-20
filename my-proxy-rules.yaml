@@ -26,7 +26,7 @@ rules+:
 
 #音乐
 #南瓜
-  - DOMAIN,cn-music.mefun.vip,DIRECT
+  - DOMAIN-SUFFIX,nangua.de,DIRECT
 #音海拾贝
   - DOMAIN,music.makifx.com,DIRECT
 #MeFun
@@ -34,6 +34,7 @@ rules+:
 
 
 #其他
-  - DOMAIN,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,tampermonkey.net,全球加速
   - DOMAIN-SUFFIX,jsdelivr.com,全球加速
+  - DOMAIN-SUFFIX,oracle.com,DIRECT
