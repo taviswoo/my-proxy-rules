@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,younoyes.com
 
 #音乐
 #南瓜
-DOMAIN,cn-music.mefun.vip
+DOMAIN-SUFFIX,nangua.de
 #音海拾贝
 DOMAIN,music.makifx.com
 #MeFun
@@ -20,4 +20,5 @@ DOMAIN,cn-music.mefun.vip
 
 
 #其他
-DOMAIN,baidu.com
+DOMAIN-SUFFIX,baidu.com
+DOMAIN-SUFFIX,oracle.com
