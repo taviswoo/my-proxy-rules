@@ -24,6 +24,10 @@ rules+:
   - DOMAIN,emby.younoyes.com,Emby服务
 #HDX
   - DOMAIN-SUFFIX,bili.rip,Emby服务
+#土匪
+  - DOMAIN-SUFFIX,tufei.de,Emby服务
+  - DOMAIN,tufei.de,Emby服务
+
 
 #音乐
 #南瓜
