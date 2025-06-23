@@ -12,6 +12,7 @@ DOMAIN,cfptv.ii00.cc
 DOMAIN,cfgtv.ii00.cc
 #墨云阁
 DOMAIN,myg.mobaiemby.site
+DOMAIN-SUFFIX, mobaiemby.site
 #二次元
 DOMAIN,media.nijigem.by
 #猫眼
@@ -22,6 +23,9 @@ DOMAIN-SUFFIX,feiniu.lol
 DOMAIN,emby.younoyes.com
 #HDX
 DOMAIN-SUFFIX,bili.rip
+#土匪
+DOMAIN-SUFFIX,tufei.de
+DOMAIN,tufei.de
 
 #听书
 
