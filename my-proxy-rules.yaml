@@ -20,7 +20,8 @@ rules+:
 #肥牛
   - DOMAIN-SUFFIX,feiniu.lol,Emby服务
 #Youno
-  - DOMAIN-SUFFIX,younoyes.com,DIRECT
+  - DOMAIN,us.younoyes.com,DIRECT
+  - DOMAIN,jp.younoyes.com,DIRECT
   - DOMAIN,emby.younoyes.com,Emby服务
 #HDX
   - DOMAIN-SUFFIX,bili.rip,Emby服务
