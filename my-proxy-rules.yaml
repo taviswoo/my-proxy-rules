@@ -28,7 +28,8 @@ rules+:
 #土匪
   - DOMAIN-SUFFIX,tufei.de,Emby服务
   - DOMAIN,tufei.de,Emby服务
-
+#哪吒
+  - DOMAIN-SUFFIX,v50.su,Emby服务  
 
 #音乐
 #南瓜
