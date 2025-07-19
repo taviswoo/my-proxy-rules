@@ -3,8 +3,8 @@ rules+:
 #CC
 
 #Misty
-  - DOMAIN,kfc.v50.su,DIRECT
-  - DOMAIN,cloudflare.v50.su,Emby服务
+  - DOMAIN-SUFFIX,misty.cx,Emby服务
+  - DOMAIN,misty.cx,Emby服务
 #卷毛鼠
 #垃圾
   - DOMAIN,cf.emby.org,Emby服务
@@ -32,9 +32,9 @@ rules+:
 #土匪
   - DOMAIN-SUFFIX,tufei.de,Emby服务
   - DOMAIN,tufei.de,Emby服务
-#哪吒
-  - DOMAIN-SUFFIX,v50.su,Emby服务
-  - DOMAIN,kfc.v50.su,Emby服务
+#KFC
+  - DOMAIN,cloudflare.v50.su,Emby服务
+  - DOMAIN,kfc.v50.su,DIRECT
 #音乐
 #南瓜
   - DOMAIN,vip.nangua.de,DIRECT
