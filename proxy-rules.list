@@ -6,7 +6,7 @@
 #CC
 
 #Misty
-DOMAIN,
+DOMAIN-SUFFIX,misty.cx
 DOMAIN,misty.cx
 #垃圾
 DOMAIN,cf.emby.org
