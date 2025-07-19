@@ -5,6 +5,9 @@
 #DSTPORT,443
 #CC
 
+#Misty
+DOMAIN,
+DOMAIN,misty.cx
 #垃圾
 DOMAIN,cf.emby.org
 #卷毛鼠
@@ -30,6 +33,7 @@ DOMAIN-SUFFIX,tufei.de
 DOMAIN,tufei.de
 #哪吒
 DOMAIN-SUFFIX,v50.su
+DOMAIN,kfc.v50.su
 
 #音乐
 #南瓜
