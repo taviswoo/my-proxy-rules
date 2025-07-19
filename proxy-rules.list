@@ -5,6 +5,8 @@
 #DSTPORT,443
 #CC
 
+#KFC
+DOMAIN,cloudflare.v50.su
 #Misty
 DOMAIN-SUFFIX,misty.cx
 DOMAIN,misty.cx
