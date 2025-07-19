@@ -3,7 +3,8 @@ rules+:
 #CC
 
 #Misty
-  - DOMAIN,misty.cx,Emby服务
+  - DOMAIN,kfc.v50.su,DIRECT
+  - DOMAIN,cloudflare.v50.su,Emby服务
 #卷毛鼠
 #垃圾
   - DOMAIN,cf.emby.org,Emby服务
