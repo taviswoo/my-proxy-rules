@@ -6,6 +6,14 @@ rules+:
   - DOMAIN-SUFFIX,misty.cx,Emby服务
   - DOMAIN,misty.cx,Emby服务
 #卷毛鼠
+  - DOMAIN,mini.jmsuper.com,Emby服务
+
+star
+  - DOMAIN,c1.staryuki.me,DIRECT
+  - DOMAIN,c2.staryuki.me,DIRECT
+  - DOMAIN,de2.staryuki.me,Emby服务
+  - DOMAIN,us3.staryuki.me,Emby服务
+  - DOMAIN,us4.staryuki.me,Emby服务
 #垃圾
   - DOMAIN,cf.emby.org,Emby服务
 #卷毛鼠
