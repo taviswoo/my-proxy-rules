@@ -18,6 +18,7 @@ rules+:
   - DOMAIN,lite.cn2gias.uk,DIRECT
 #垃圾
   - DOMAIN,cf.emby.org,Emby服务
+  - DOMAIN-SUFFIX,emby.org,Emby服务
 #卷毛鼠
   - DOMAIN-SUFFIX,jmsuper.com,Emby服务
 #MEFUN
