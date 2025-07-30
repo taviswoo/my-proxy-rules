@@ -60,4 +60,5 @@ rules+:
   - DOMAIN-SUFFIX,tampermonkey.net,全球加速
   - DOMAIN-SUFFIX,jsdelivr.com,全球加速
   - DOMAIN-SUFFIX,oracle.com,DIRECT
+  - DOMAIN-KEYWORD,rhino3d,REJECT
 #  - DSTPORT,443,Emby服务
