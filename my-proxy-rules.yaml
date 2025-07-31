@@ -7,6 +7,9 @@ rules+:
   - DOMAIN,misty.cx,Emby服务
 #卷毛鼠
   - DOMAIN,mini.jmsuper.com,Emby服务
+  
+#非越
+  - DOMAIN-SUFFIX,sfcj.org,Emby服务
 
 #star
   - DOMAIN,c1.staryuki.me,DIRECT
