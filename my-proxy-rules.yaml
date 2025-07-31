@@ -10,7 +10,8 @@ rules+:
   
 #非越
   - DOMAIN-SUFFIX,sfcj.org,Emby服务
-
+#稳健
+  - DOMAIN-SUFFIX,wenjian.de,Emby服务
 #star
   - DOMAIN,c1.staryuki.me,DIRECT
   - DOMAIN,c2.staryuki.me,DIRECT
