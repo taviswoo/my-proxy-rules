@@ -52,6 +52,13 @@ rules+:
 #KFC
   - DOMAIN,cloudflare.v50.su,Emby服务
   - DOMAIN,kfc.v50.su,DIRECT
+  
+#月饼
+  - DOMAIN,a.emby.my,DIRECT
+  - DOMAIN,b.emby.my,狮城节点
+  - DOMAIN,c.emby.my,日本节点
+  - DOMAIN,d.emby.my:443,美国节点
+  
 #音乐
 #南瓜
   - DOMAIN,vip.nangua.de,DIRECT
