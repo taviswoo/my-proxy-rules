@@ -2,6 +2,13 @@ rules+:
 #影视
 #CC
 
+#lily
+  - DOMAIN,cdn.lilyemby.my,DIRECT
+  - DOMAIN,cf.lilyemby.my,Emby服务
+  - DOMAIN,o1.lilyemby.my,Emby服务
+  - DOMAIN,o2.lilyemby.my,Emby服务
+  - DOMAIN,o3.lilyemby.my,Emby服务
+  
 #Misty
   - DOMAIN-SUFFIX,misty.cx,Emby服务
   - DOMAIN,misty.cx,Emby服务
@@ -75,3 +82,4 @@ rules+:
   - DOMAIN-SUFFIX,oracle.com,DIRECT
   - DOMAIN-KEYWORD,rhino3d,REJECT
 #  - DSTPORT,443,Emby服务
+
