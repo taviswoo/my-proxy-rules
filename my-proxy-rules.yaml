@@ -30,8 +30,8 @@ rules+:
 #STNP
   - DOMAIN,lite.cn2gias.uk,DIRECT
 #垃圾
-  - DOMAIN,cf.emby.org,Emby服务
-  - DOMAIN-SUFFIX,emby.org,Emby服务
+  - DOMAIN,cf.emby.org,香港节点
+  - DOMAIN-SUFFIX,emby.org,香港节点
 #卷毛鼠
   - DOMAIN-SUFFIX,jmsuper.com,Emby服务
 #MEFUN
@@ -82,4 +82,5 @@ rules+:
   - DOMAIN-SUFFIX,oracle.com,DIRECT
   - DOMAIN-KEYWORD,rhino3d,REJECT
 #  - DSTPORT,443,Emby服务
+
 
