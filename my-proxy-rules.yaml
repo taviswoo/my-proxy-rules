@@ -67,10 +67,13 @@ rules+:
   - DOMAIN,b.emby.my,狮城节点
   - DOMAIN,c.emby.my,日本节点
   - DOMAIN,d.emby.my:443,美国节点
+
+#NYA
+  - DOMAIN-SUFFIX,bangumi.ca,Emby服务
   
 #音乐
 #南瓜
-  - DOMAIN,vip.nangua.de,DIRECT
+  - DOMAIN,vip.nangua.de,Emby服务
 #音海拾贝
 
 #MeFun
@@ -84,6 +87,7 @@ rules+:
   - DOMAIN-SUFFIX,oracle.com,DIRECT
   - DOMAIN-KEYWORD,rhino3d,REJECT
 #  - DSTPORT,443,Emby服务
+
 
 
 
