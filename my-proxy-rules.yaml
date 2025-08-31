@@ -86,7 +86,9 @@ rules+:
   - DOMAIN-SUFFIX,jsdelivr.com,全球加速
   - DOMAIN-SUFFIX,oracle.com,DIRECT
   - DOMAIN-KEYWORD,rhino3d,REJECT
+  - DOMAIN-SUFFIX,tiktokmusic.com,全球加速
 #  - DSTPORT,443,Emby服务
+
 
 
 
