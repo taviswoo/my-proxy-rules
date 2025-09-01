@@ -19,6 +19,10 @@ rules+:
   
 #非越
   - DOMAIN-SUFFIX,sfcj.org,Emby服务
+  
+#飞跃
+  - DOMAIN-SUFFIX,feiyue.lol,Emby服务
+  
 #稳健
   - DOMAIN-SUFFIX,wenjian.de,Emby服务
 #惊蛰
@@ -88,6 +92,7 @@ rules+:
   - DOMAIN-KEYWORD,rhino3d,REJECT
   - DOMAIN-SUFFIX,tiktokmusic.com,全球加速
 #  - DSTPORT,443,Emby服务
+
 
 
 
