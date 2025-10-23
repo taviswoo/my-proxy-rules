@@ -92,7 +92,9 @@ rules+:
   - DOMAIN-KEYWORD,rhino3d,REJECT
   - DOMAIN-SUFFIX,tiktokmusic.com,全球加速
   - DOMAIN-SUFFIX,599527.xyz,全球加速
+  - DOMAIN-SUFFIX,frantech.ca,DIRECT
 #  - DSTPORT,443,Emby服务
+
 
 
 
