@@ -94,7 +94,10 @@ rules+:
   - DOMAIN-SUFFIX,599527.xyz,全球加速
   - DOMAIN-SUFFIX,frantech.ca,DIRECT
   - DOMAIN-SUFFIX,namecrane.com,DIRECT
+  - DOMAIN-SUFFIX,ovh.ie,德国节点
+  - DOMAIN-SUFFIX,ovh.com,德国节点
 #  - DSTPORT,443,Emby服务
+
 
 
 
