@@ -96,8 +96,9 @@ rules+:
   - DOMAIN-SUFFIX,namecrane.com,DIRECT
   - DOMAIN-SUFFIX,ovh.ie,德国节点
   - DOMAIN-SUFFIX,ovh.com,德国节点
-  - IP-CIDR,0.0.0.0/0,DIRECT
+  - DOMAIN-SUFFIX,bero-host.de,德国节点
 #  - DSTPORT,443,Emby服务
+
 
 
 
