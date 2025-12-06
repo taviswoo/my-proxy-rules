@@ -5,13 +5,13 @@ proxy-groups:
   - {name: Emby服务, type: select, proxies: [香港节点, 日本节点, 美国节点, 狮城节点,德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
   - {name: 金融服务, type: select, proxies: [香港节点, 日本节点, 美国节点, 狮城节点,德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Finance.png }
 #节点分组
-  - {name: 自动选择, type: url-test, include-all: true, interval: 600, tolerance: 50,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
-  - {name: 香港节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
-  - {name: 日本节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "日|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
-#  - {name: 台湾节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
-  - {name: 美国节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
-  - {name: 狮城节点, type: url-test, include-all: true, interval: 600, tolerance: 50,  filter: "新|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
-  - {name: 德国节点, type: url-test, include-all: true, interval: 600, tolerance: 50, filter: "德|🇩🇪|DE|(?i)Germany", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png } 
+  - {name: 自动选择, type: url-test, include-all: true, interval: 28800, tolerance: 100,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
+  - {name: 香港节点, type: url-test, include-all: true, interval: 28800, tolerance: 100,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
+  - {name: 日本节点, type: url-test, include-all: true, interval: 28800, tolerance: 100,  filter: "日|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
+#  - {name: 台湾节点, type: url-test, include-all: true, interval: 28800, tolerance: 100,  filter: "台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
+  - {name: 美国节点, type: url-test, include-all: true, interval: 28800, tolerance: 100,  filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
+  - {name: 狮城节点, type: url-test, include-all: true, interval: 28800, tolerance: 100,  filter: "新|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
+  - {name: 德国节点, type: url-test, include-all: true, interval: 28800, tolerance: 100, filter: "德|🇩🇪|DE|(?i)Germany", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png } 
 # 分流规则 
 rule-providers:
   AdBlock:     {behavior: domain,    interval: 86400, format: text, type: http, url: https://raw.githubusercontent.com/Cats-Team/AdRules/main/adrules_domainset.txt ,                                           path: ./ruleset/anti-ad-clash.txt }
