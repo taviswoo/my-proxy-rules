@@ -40,3 +40,8 @@ DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,visa.com
 DOMAIN-SUFFIX,mastercard.com
+
+DOMAIN-SUFFIX,wise.com
+DOMAIN-SUFFIX,transferwise.com
+DOMAIN-SUFFIX,wisepayments.com
+DOMAIN-SUFFIX,wise-static.com
