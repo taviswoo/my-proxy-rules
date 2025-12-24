@@ -87,6 +87,9 @@ rules+:
 
 
 #其他
+  # SSH 直连
+  - PORT,22,DIRECT
+  
   - DOMAIN-SUFFIX,baidu.com,DIRECT
   - DOMAIN-SUFFIX,tampermonkey.net,全球加速
   - DOMAIN-SUFFIX,jsdelivr.com,全球加速
@@ -109,6 +112,7 @@ rules+:
   - DST-PORT,587,全球加速
   
 #  - DSTPORT,443,Emby服务
+
 
 
 
