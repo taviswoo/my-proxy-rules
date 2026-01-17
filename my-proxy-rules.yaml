@@ -70,7 +70,7 @@ rules+:
   
 #月饼
   - DOMAIN,a.emby.my,DIRECT
-  - DOMAIN,b.emby.my,狮城节点
+  - DOMAIN,b.emby.my,Emby服务
   - DOMAIN,c.emby.my,日本节点
   - DOMAIN,d.emby.my:443,美国节点
 #见手青
@@ -112,6 +112,7 @@ rules+:
   - DST-PORT,587,全球加速
   
 #  - DSTPORT,443,Emby服务
+
 
 
 
