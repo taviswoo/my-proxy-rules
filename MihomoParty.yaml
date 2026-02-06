@@ -1,6 +1,6 @@
 proxy-groups:
 #分流分组
-  - {name: 全球加速, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
+  - {name: 全球加速, type: select, proxies: [自动选择, 日本节点, 香港节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
   - {name: 国际媒体, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png }
   - {name: Emby服务, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
   - {name: 金融服务, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Bitcloud.png }
