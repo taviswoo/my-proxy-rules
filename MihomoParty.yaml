@@ -6,7 +6,7 @@ proxy-groups:
   - {name: 金融服务, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/Bitcloud.png }
 #节点分组
   - {name: 自动选择, type: url-test, include-all: true, interval: 28800, tolerance: 100,  icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
-#  - {name: 香港节点, type: url-test, include-all: true, interval: 28800, tolerance: 100,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
+  - {name: 香港节点, type: url-test, include-all: true, interval: 28800, tolerance: 100,  filter: "港|HK|(?i)Hong", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png }             
   - {name: 日本节点, type: url-test, include-all: true, interval: 28800, tolerance: 100,  filter: "日|东京|JP|(?i)Japan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png }
 #  - {name: 台湾节点, type: url-test, include-all: true, interval: 28800, tolerance: 100,  filter: "台|湾|TW|(?i)Taiwan", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png }
   - {name: 美国节点, type: url-test, include-all: true, interval: 28800, tolerance: 100,  filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
