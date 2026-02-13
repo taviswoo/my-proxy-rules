@@ -95,6 +95,8 @@ rules+:
   - DOMAIN-SUFFIX,jsdelivr.com,全球加速
   - DOMAIN-SUFFIX,oracle.com,DIRECT
   - DOMAIN-KEYWORD,rhino3d,REJECT
+  - DOMAIN-SUFFIX,mcneel.com,REJECT
+  - DOMAIN-SUFFIX,enscape3d.com,REJECT
   - DOMAIN-SUFFIX,tiktokmusic.com,全球加速
   - DOMAIN-SUFFIX,599527.xyz,全球加速
   - DOMAIN-SUFFIX,frantech.ca,DIRECT
@@ -105,13 +107,10 @@ rules+:
   - DOMAIN-SUFFIX,spartanhost.net,DIRECT
   - DOMAIN-SUFFIX,cock.li,全球加速
   - DOMAIN-SUFFIX,mail.cock.li,全球加速
-  - IP-CIDR,185.165.168.0/24,全球加速,no-resolve
-  - IP-CIDR,185.165.169.0/24,全球加速,no-resolve
-  - DST-PORT,993,全球加速
-  - DST-PORT,465,全球加速
-  - DST-PORT,587,全球加速
+
   
 #  - DSTPORT,443,Emby服务
+
 
 
 
