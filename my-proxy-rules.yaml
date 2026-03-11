@@ -107,9 +107,13 @@ rules+:
   - DOMAIN-SUFFIX,spartanhost.net,DIRECT
   - DOMAIN-SUFFIX,cock.li,全球加速
   - DOMAIN-SUFFIX,mail.cock.li,全球加速
+  - DOMAIN-SUFFIX,myqnapcloud.cn,DIRECT
+  - DOMAIN-SUFFIX,qnap.com.cn,DIRECT
+  
 
   
 #  - DSTPORT,443,Emby服务
+
 
 
 
