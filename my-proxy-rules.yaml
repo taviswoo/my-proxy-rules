@@ -109,11 +109,11 @@ rules+:
   - DOMAIN-SUFFIX,mail.cock.li,全球加速
   - DOMAIN-SUFFIX,myqnapcloud.cn,DIRECT
   - DOMAIN-SUFFIX,qnap.com.cn,DIRECT
-  - DOMAIN-SUFFIX,totheglory.im,全球加速
   
 
   
 #  - DSTPORT,443,Emby服务
+
 
 
 
