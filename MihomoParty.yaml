@@ -38,7 +38,7 @@ rule-providers:
   StreamingCN: {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Clash/Ruleset/StreamingCN.yaml  ,                        path: ./ruleset/StreamingCN.yaml  }
 # 分流Policy 
 rules:                   
-  - RULE-SET,OpenAi,全球加速
+  - RULE-SET,OpenAi,美国节点
   - RULE-SET,Emby,Emby服务
   - RULE-SET,Youtube,国际媒体
   - RULE-SET,GlobalMedia,国际媒体
