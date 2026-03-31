@@ -5,10 +5,10 @@ proxy-groups:
   - {name: Emby服务, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
 
   # ⭐ 新增：AI 分流
-  - {name: AI服务, type: select, proxies: [美国家宽, 自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/AI.png }
+  - {name: AI服务, type: select, proxies: [美国家宽], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/AI.png }
 
   # ⭐ 新增：聊天工具分流
-  - {name: 聊天服务, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Chat.png }
+  - {name: 聊天服务, type: select, proxies: [自动选择], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Chat.png }
 
   # 节点分组
   - {name: 自动选择, type: url-test, interval: 28800, tolerance: 100, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
