@@ -38,8 +38,8 @@ rule-providers:
   Download:    {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml ,                  path: ./ruleset/Download.yaml     }
   ChinaIP:     {behavior: ipcidr,    interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/soffchen/GeoIP2-CN/release/clash-rule-provider.yml ,                                     path: ./ruleset/ChinaIP.yaml      }
   BankUS:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/Bank/BankUS.yaml  ,                  path: ./ruleset/BankUS.yaml       }
-  Streaming:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Clash/Ruleset/Streaming.yaml  ,                          path: ./ruleset/Streaming.yaml    }
-  StreamingCN: {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Clash/Ruleset/StreamingCN.yaml  ,                        path: ./ruleset/StreamingCN.yaml  }
+  Streaming:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/Emyori/blackmatrix7/refs/heads/master/rule/Clash/Steam/Steam.yaml  ,                     path: ./ruleset/Streaming.yaml    }
+  StreamingCN: {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/Emyori/blackmatrix7/refs/heads/master/rule/Clash/SteamCN/SteamCN.yaml  ,                 path: ./ruleset/StreamingCN.yaml  }
   Messaging:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Chat.yaml,                                          path: ./ruleset/Messaging.yaml }
 
 # 分流Policy 
