@@ -3,12 +3,8 @@ proxy-groups:
   - {name: 全球加速, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png }
   - {name: 国际媒体, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png }
   - {name: Emby服务, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png }
-
-  # ⭐ 新增：AI 分流
-  - {name: AI服务, type: select, proxies: [美国家宽], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/AI.png }
-
-  # ⭐ 新增：聊天工具分流
-  - {name: 聊天服务, type: select, proxies: [自动选择], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Chat.png }
+  - {name: AI服务,   type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/AI.png }
+  - {name: 聊天服务, type: select, proxies: [自动选择, 日本节点, 美国节点, 德国节点], icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Chat.png }
 
   # 节点分组
   - {name: 自动选择, type: url-test, interval: 28800, tolerance: 100, icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png }
@@ -44,12 +40,10 @@ rule-providers:
   BankUS:      {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/Bank/BankUS.yaml  ,                  path: ./ruleset/BankUS.yaml       }
   Streaming:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Clash/Ruleset/Streaming.yaml  ,                          path: ./ruleset/Streaming.yaml    }
   StreamingCN: {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/Centralmatrix3/Matrix-io/master/Clash/Ruleset/StreamingCN.yaml  ,                        path: ./ruleset/StreamingCN.yaml  }
-  AI:          {behavior: classical, interval: 86400, format: yaml, type: http, url: https://gist.githubusercontent.com/ddgksf2013/cb4121e8b5c5d865cc949cb8120320c4/raw/Ai.yaml,                                path: ./ruleset/AI.yaml }
   Messaging:   {behavior: classical, interval: 86400, format: yaml, type: http, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Chat.yaml,                                          path: ./ruleset/Messaging.yaml }
 
 # 分流Policy 
 rules:
-  - RULE-SET,AI,AI服务
   - RULE-SET,Messaging,聊天服务
   - RULE-SET,OpenAi,美国家宽
   - RULE-SET,Emby,Emby服务
