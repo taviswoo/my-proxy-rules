@@ -18,7 +18,7 @@ proxy-groups:
   - {name: 美国节点, type: url-test, interval: 28800, tolerance: 100, filter: "美|US|(?i)States|American", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
   - {name: 狮城节点, type: url-test, interval: 28800, tolerance: 100, filter: "新|坡|SG|(?i)Singapore", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png }
   - {name: 德国节点, type: url-test, interval: 28800, tolerance: 100, filter: "德|🇩🇪|DE|(?i)Germany", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png }
-  - {name: 美国家宽, type: fallback, interval: 28800, tolerance: 100, filter: "US-R", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
+  - {name: 美国家宽, type: select, interval: 28800, tolerance: 100, filter: "US-R", icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png }
 
 # 分流规则 
 rule-providers:
