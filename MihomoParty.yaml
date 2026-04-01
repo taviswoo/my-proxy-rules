@@ -129,7 +129,7 @@ proxy-groups:
     tolerance: 100
     lazy: true
     include-all: true
-    filter: "美|US|(?i)States|American"
+    filter: "(?i)^(?!US-R-).*(美|US|States|American)"
     remnawave:
       include-proxies: false
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
