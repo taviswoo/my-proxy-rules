@@ -498,7 +498,7 @@ rules:
   - RULE-SET,Instagram,全球加速
   - RULE-SET,Facebook,全球加速
   - RULE-SET,Reddit,全球加速
-  - RULE-SET,Discord,通信链路
+  - RULE-SET,Discord,通讯链路
 
   # 游戏
   - RULE-SET,Steam,全球加速
