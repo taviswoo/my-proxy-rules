@@ -2,8 +2,6 @@
 # 代理组（旗舰版）
 # ==========================================
 proxy-groups:
-
-  # 手动选择分流组
   - name: 全球加速
     type: select
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
