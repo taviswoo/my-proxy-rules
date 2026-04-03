@@ -141,14 +141,6 @@ proxy-groups:
     remnawave:
       include-proxies: true
 
-  # Remnawave 主组
-  - name: Remnawave
-    type: select
-    include-all: true
-    use:
-      - Airport
-    remnawave:
-      include-proxies: true
 # ==========================================
 # rule-providers（旗舰版）
 # ==========================================
