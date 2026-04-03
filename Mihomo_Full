@@ -578,9 +578,9 @@ rules:
   - RULE-SET,BankUS,美国家宽
 
   # 隐私 / 恶意
-  - RULE-SET,Privacy,BLOCK
-  - RULE-SET,Malware,BLOCK
-  - RULE-SET,Tracker,BLOCK
+  - RULE-SET,Privacy,REJECT
+  - RULE-SET,Malware,REJECT
+  - RULE-SET,Tracker,REJECT
 
   # 基础直连
   - RULE-SET,Direct,DIRECT
