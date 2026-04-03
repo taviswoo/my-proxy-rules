@@ -1,11 +1,25 @@
 # ==========================================
-# 代理组 (Proxy Groups)
+# 节点（Remnawave 自动注入 + Sub-Store）
+# ==========================================
+proxies: []
+
+proxy-providers:
+  Airport:
+    type: http
+    url: "YOUR_SUBSTORE_URL_HERE"
+    interval: 3600
+    path: ./providers/airport.yaml
+    health-check:
+      enable: true
+      interval: 600
+      url: https://cp.cloudflare.com/generate_204
+
+# ==========================================
+# 代理组（旗舰版）
 # ==========================================
 proxy-groups:
 
-  # ========================================
-  # 分流分组（只显示你手动写的节点）
-  # ========================================
+  # 手动选择分流组
   - name: 全球加速
     type: select
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
@@ -56,6 +70,7 @@ proxy-groups:
       - 狮城节点
       - 德国节点
 
+  # 自动选择
   - name: 自动选择
     type: url-test
     include-all: true
@@ -68,7 +83,7 @@ proxy-groups:
     tolerance: 100
     lazy: true
 
-  # 地区分组（自动分类）
+  # 地区分组
   - name: 香港节点
     type: url-test
     include-all: true
@@ -144,7 +159,7 @@ proxy-groups:
     remnawave:
       include-proxies: true
 
-  # Remnawave 主组（融合所有节点）
+  # Remnawave 主组
   - name: Remnawave
     type: select
     include-all: true
@@ -152,7 +167,6 @@ proxy-groups:
       - Airport
     remnawave:
       include-proxies: true
-
 # ==========================================
 # rule-providers（旗舰版）
 # ==========================================
