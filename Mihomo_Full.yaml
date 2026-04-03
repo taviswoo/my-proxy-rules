@@ -1,94 +1,73 @@
 # ==========================================
-# 代理组（自动分类 + 自动测速 + Remna 融合）
+# 代理组 (Proxy Groups)
 # ==========================================
 proxy-groups:
 
-  # 主选择器（所有节点）
+  # ========================================
+  # 分流分组（只显示你手动写的节点）
+  # ========================================
   - name: 全球加速
     type: select
-    include-all: true
-    use:
-      - Airport
-    remnawave:
-      include-proxies: true
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
     proxies:
       - 自动选择
       - 香港节点
       - 日本节点
       - 美国节点
       - 狮城节点
-      - 台湾节点
       - 德国节点
-      - 美国家宽
 
   - name: 国际媒体
     type: select
-    include-all: true
-    use:
-      - Airport
-    remnawave:
-      include-proxies: true
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png
     proxies:
       - 自动选择
       - 香港节点
       - 日本节点
       - 美国节点
       - 狮城节点
-      - 台湾节点
       - 德国节点
 
   - name: Emby服务
     type: select
-    include-all: true
-    use:
-      - Airport
-    remnawave:
-      include-proxies: true
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png
     proxies:
       - 自动选择
       - 香港节点
       - 日本节点
       - 美国节点
       - 狮城节点
-      - 台湾节点
       - 德国节点
 
   - name: AI分流
     type: select
-    include-all: true
-    use:
-      - Airport
-    filter: "US-R-|AI|GPT|OpenAI"
-    remnawave:
-      include-proxies: true
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
+    proxies:
+      - 美国家宽
 
   - name: 通信链路
     type: select
-    include-all: true
-    use:
-      - Airport
-    remnawave:
-      include-proxies: true
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
     proxies:
       - 自动选择
       - 香港节点
-      - 日本节点
       - 美国节点
+      - 日本节点
       - 狮城节点
-      - 台湾节点
       - 德国节点
 
-  - name: 自动选择
-    type: url-test
-    include-all: true
-    use:
-      - Airport
-    remnawave:
-      include-proxies: true
-    url: https://cp.cloudflare.com/generate_204
-    interval: 300
-    tolerance: 100
-    lazy: true
+
+ - name: 自动选择
+   type: url-test
+   include-all: true
+   use:
+    - Airport
+   remnawave:
+    include-proxies: true
+   url: https://cp.cloudflare.com/generate_204
+   interval: 300
+   tolerance: 100
+   lazy: true
 
   # 地区分组（自动分类）
   - name: 香港节点
