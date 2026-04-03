@@ -56,18 +56,17 @@ proxy-groups:
       - 狮城节点
       - 德国节点
 
-
- - name: 自动选择
-   type: url-test
-   include-all: true
-   use:
-    - Airport
-   remnawave:
-    include-proxies: true
-   url: https://cp.cloudflare.com/generate_204
-   interval: 300
-   tolerance: 100
-   lazy: true
+  - name: 自动选择
+    type: url-test
+    include-all: true
+    use:
+      - Airport
+    remnawave:
+      include-proxies: true
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
 
   # 地区分组（自动分类）
   - name: 香港节点
