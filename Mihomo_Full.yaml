@@ -492,7 +492,7 @@ rules:
   - RULE-SET,Emby,Emby服务
 
   # 社交
-  - RULE-SET,Telegram,通信链路
+  - RULE-SET,Telegram,通讯链路
   - RULE-SET,Twitter,全球加速
   - RULE-SET,TikTok,国际媒体
   - RULE-SET,Instagram,全球加速
