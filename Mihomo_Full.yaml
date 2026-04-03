@@ -1,20 +1,4 @@
 # ==========================================
-# 节点（Remnawave 自动注入 + Sub-Store）
-# ==========================================
-proxies: []
-
-proxy-providers:
-  Airport:
-    type: http
-    url: "YOUR_SUBSTORE_URL_HERE"
-    interval: 3600
-    path: ./providers/airport.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://cp.cloudflare.com/generate_204
-
-# ==========================================
 # 代理组（旗舰版）
 # ==========================================
 proxy-groups:
