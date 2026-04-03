@@ -55,7 +55,7 @@ proxy-groups:
       - 狮城节点
       - 德国节点
 
-  - name: 聊天服务
+  - name: 通讯链路
     type: select
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
     remnawave:
