@@ -1,37 +1,27 @@
-# ==========================================
-# 节点（Remnawave 自动注入 + Sub-Store）
-# ==========================================
-proxies:  # LEAVE THIS LINE!
-
-proxy-providers:
-  Airport:
-    type: http
-    url: "YOUR_SUBSTORE_URL_HERE"
-    interval: 3600
-    path: ./providers/airport.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: https://cp.cloudflare.com/generate_204
-
-# ==========================================
-# 代理组（旗舰版）
-# ==========================================
+# ========================================
+# 分流分组 - 只显示指定的地区分组
+# ========================================
 proxy-groups:
   - name: 全球加速
     type: select
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Global.png
+    remnawave:
+      include-proxies: false
     proxies:
       - 自动选择
       - 香港节点
       - 日本节点
+      - 台湾节点
       - 美国节点
       - 狮城节点
       - 德国节点
+      - DIRECT
 
   - name: 国际媒体
     type: select
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Streaming.png
+    remnawave:
+      include-proxies: false
     proxies:
       - 自动选择
       - 香港节点
@@ -43,6 +33,8 @@ proxy-groups:
   - name: Emby服务
     type: select
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Emby.png
+    remnawave:
+      include-proxies: false
     proxies:
       - 自动选择
       - 香港节点
@@ -54,108 +46,129 @@ proxy-groups:
   - name: AI分流
     type: select
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/OpenAI.png
-    proxies:
-      - 美国家宽
-
-  - name: 通信链路
-    type: select
-    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+    remnawave:
+      include-proxies: false
     proxies:
       - 自动选择
-      - 香港节点
       - 美国节点
       - 日本节点
       - 狮城节点
       - 德国节点
 
-  # 自动选择
+  - name: 聊天服务
+    type: select
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Telegram.png
+    remnawave:
+      include-proxies: false
+    proxies:
+      - 自动选择
+      - 美国节点
+      - 日本节点
+      - 狮城节点
+      - 德国节点
+
+  # ========================================
+  # 智能选择分组
+  # ========================================
   - name: 自动选择
     type: url-test
-    include-all: true
-    use:
-      - Airport
-    remnawave:
-      include-proxies: true
     url: https://cp.cloudflare.com/generate_204
     interval: 300
     tolerance: 100
     lazy: true
+    include-all: true
+    remnawave:
+      include-proxies: false
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/Urltest.png
+    proxies:
+      # LEAVE THIS LINE!
 
-  # 地区分组
+  # ========================================
+  # 地区节点分组 - 自动筛选
+  # ========================================
   - name: 香港节点
     type: url-test
-    include-all: true
-    use:
-      - Airport
-    filter: "港|HK|(?i)Hong"
-    remnawave:
-      include-proxies: true
     url: https://cp.cloudflare.com/generate_204
     interval: 300
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "港|HK|(?i)Hong"
+    remnawave:
+      include-proxies: false
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/HK.png
 
   - name: 日本节点
     type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
     include-all: true
-    use:
-      - Airport
     filter: "日|东京|JP|(?i)Japan"
     remnawave:
-      include-proxies: true
-    url: https://cp.cloudflare.com/generate_204
-    interval: 300
-
-  - name: 美国节点
-    type: url-test
-    include-all: true
-    use:
-      - Airport
-    filter: "美|US|(?i)States|American"
-    remnawave:
-      include-proxies: true
-    url: https://cp.cloudflare.com/generate_204
-    interval: 300
-
-  - name: 狮城节点
-    type: url-test
-    include-all: true
-    use:
-      - Airport
-    filter: "新|坡|SG|(?i)Singapore"
-    remnawave:
-      include-proxies: true
-    url: https://cp.cloudflare.com/generate_204
-    interval: 300
+      include-proxies: false
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/JP.png
 
   - name: 台湾节点
     type: url-test
-    include-all: true
-    use:
-      - Airport
-    filter: "台|湾|TW|(?i)Taiwan"
-    remnawave:
-      include-proxies: true
     url: https://cp.cloudflare.com/generate_204
     interval: 300
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "台|湾|TW|(?i)Taiwan"
+    remnawave:
+      include-proxies: false
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/TW.png
+
+  - name: 美国节点
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "(?i)^(?!US-R-).*(美|US|States|American)"
+    remnawave:
+      include-proxies: false
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
+
+  - name: 狮城节点
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "新|坡|SG|(?i)Singapore"
+    remnawave:
+      include-proxies: false
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/SG.png
 
   - name: 德国节点
     type: url-test
-    include-all: true
-    use:
-      - Airport
-    filter: "德|DE|(?i)Germany"
-    remnawave:
-      include-proxies: true
     url: https://cp.cloudflare.com/generate_204
     interval: 300
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "德|🇩🇪|DE|(?i)Germany"
+    remnawave:
+      include-proxies: false
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png
 
   - name: 美国家宽
     type: select
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
     include-all: true
-    use:
-      - Airport
     filter: "US-R-"
     remnawave:
-      include-proxies: true
+      include-proxies: false
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/US.png
 
 # ==========================================
 # rule-providers（旗舰版）
