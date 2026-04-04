@@ -41,23 +41,14 @@ rules+:
   - DOMAIN-SUFFIX, mobaiemby.site,Emby服务
 #二次元
   - DOMAIN,media.nijigem.by,Emby服务
-#猫眼
-  - DOMAIN-SUFFIX,frre.me,Emby服务
+
 #肥牛
   - DOMAIN-SUFFIX,feiniu.lol,Emby服务
 #Youno
   - DOMAIN,us.younoyes.com,DIRECT
   - DOMAIN,jp.younoyes.com,DIRECT
   - DOMAIN,emby.younoyes.com,Emby服务
-#HDX
-  - DOMAIN-SUFFIX,bili.rip,Emby服务
-#土匪
-  - DOMAIN-SUFFIX,tufei.de,Emby服务
-  - DOMAIN,tufei.de,Emby服务
-#KFC
-  - DOMAIN,cloudflare.v50.su,Emby服务
-  - DOMAIN,kfc.v50.su,DIRECT
-  
+
 #月饼
   - DOMAIN,a.emby.my,DIRECT
   - DOMAIN,b.emby.my,Emby服务
@@ -89,18 +80,16 @@ ichinosekotomi.com:443
   - DOMAIN-SUFFIX,mcneel.com,REJECT
   - DOMAIN-SUFFIX,enscape3d.com,REJECT
   - DOMAIN-SUFFIX,tiktokmusic.com,全球加速
-  - DOMAIN-SUFFIX,599527.xyz,全球加速
   - DOMAIN-SUFFIX,frantech.ca,DIRECT
   - DOMAIN-SUFFIX,namecrane.com,DIRECT
   - DOMAIN-SUFFIX,ovh.ie,德国节点
-  - DOMAIN-SUFFIX,ovh.com,德国节点
+  - DOMAIN-SUFFIX,ovh.com,全球加速
   - DOMAIN-SUFFIX,bero-host.de,德国节点
   - DOMAIN-SUFFIX,spartanhost.net,DIRECT
   - DOMAIN-SUFFIX,cock.li,全球加速
   - DOMAIN-SUFFIX,mail.cock.li,全球加速
   - DOMAIN-SUFFIX,myqnapcloud.cn,DIRECT
   - DOMAIN-SUFFIX,qnap.com.cn,DIRECT
-  - DOMAIN-SUFFIX,baidu.com,DIRECT
 
   
 #  - DSTPORT,443,Emby服务
