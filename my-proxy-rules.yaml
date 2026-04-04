@@ -3,17 +3,7 @@ rules+:
 #CC
 
 #lily
-  - DOMAIN,cdn.lilyemby.my,DIRECT
-  - DOMAIN,cf.lilyemby.my,Emby服务
-  - DOMAIN,o1.lilyemby.my,Emby服务
-  - DOMAIN,o2.lilyemby.my,Emby服务
-  - DOMAIN,o3.lilyemby.my,Emby服务
-#ZOX
-  - DOMAIN-KEYWORD,zoxfree,Emby服务
-  
-#Misty
-  - DOMAIN-SUFFIX,misty.cx,Emby服务
-  - DOMAIN,misty.cx,Emby服务
+  - DOMAIN-SUFFIX,lilyemby.com,Emby服务
 #卷毛鼠
   - DOMAIN,mini.jmsuper.com,Emby服务
   
