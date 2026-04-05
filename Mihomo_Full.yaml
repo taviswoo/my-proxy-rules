@@ -50,7 +50,7 @@ proxy-groups:
       include-proxies: false
     proxies:
       - 自动选择
-      - 家宽节点
+      - 美国家宽
       - 美国节点
 
   - name: 通讯链路
