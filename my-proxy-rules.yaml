@@ -67,7 +67,6 @@ rules+:
 #MeFun
   - DOMAIN,cn-music.mefun.vip,DIRECT
 #琴美
-ichinosekotomi.com:443
   - DOMAIN,ichinosekotomi.com,Emby服务
 #其他
   # SSH 直连
