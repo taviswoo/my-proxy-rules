@@ -58,16 +58,15 @@ rules+:
   - DOMAIN,vban.xyz,Emby服务
 #NYA
   - DOMAIN-SUFFIX,bangumi.ca,Emby服务
+
+#琴美
+  - DOMAIN-SUFFIX,ichinosekotomi.com,Emby服务
   
 #音乐
 #南瓜
   - DOMAIN,vip.nangua.de,Emby服务
 #音海拾贝
 
-#MeFun
-  - DOMAIN,cn-music.mefun.vip,DIRECT
-#琴美
-  - DOMAIN,ichinosekotomi.com,Emby服务
 #其他
   # SSH 直连
   
@@ -90,9 +89,6 @@ rules+:
   - DOMAIN-SUFFIX,myqnapcloud.cn,DIRECT
   - DOMAIN-SUFFIX,qnap.com.cn,DIRECT
   - DOMAIN-SUFFIX,nodeseek.com,全球加速
-  
-#  - DSTPORT,443,Emby服务
-
 
 
 
