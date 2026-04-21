@@ -15,6 +15,7 @@ proxy-groups:
       - 美国节点
       - 狮城节点
       - 德国节点
+      - 韩国节点
       - DIRECT
 
   - name: 国际媒体
@@ -29,6 +30,7 @@ proxy-groups:
       - 美国节点
       - 狮城节点
       - 德国节点
+      - 韩国节点
 
   - name: Emby服务
     type: select
@@ -42,6 +44,7 @@ proxy-groups:
       - 美国节点
       - 狮城节点
       - 德国节点
+      - 韩国节点
 
   - name: AI分流
     type: select
@@ -64,6 +67,7 @@ proxy-groups:
       - 日本节点
       - 狮城节点
       - 德国节点
+      - 韩国节点
 
   # ========================================
   # 智能选择分组
@@ -155,6 +159,18 @@ proxy-groups:
     remnawave:
       include-proxies: false
     icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DE.png
+
+  - name: 韩国节点
+    type: url-test
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+    include-all: true
+    filter: "韩|KR|(?i)Korea|Seoul"
+    remnawave:
+      include-proxies: false
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/KR.png
 
   - name: 美国家宽
     type: select
