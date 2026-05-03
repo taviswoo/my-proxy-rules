@@ -482,6 +482,14 @@ rule-providers:
 # ==========================================
 rules:
 
+  # 基础直连
+  - RULE-SET,Direct,DIRECT
+  - RULE-SET,Lan,DIRECT
+  - RULE-SET,ChinaIP,DIRECT
+  
+  # 流媒体（国内）
+  - RULE-SET,StreamingCN,DIRECT
+  
   # AI
   - RULE-SET,OpenAi,AI分流
   - RULE-SET,Claude,AI分流
@@ -498,9 +506,6 @@ rules:
   - RULE-SET,Youtube,国际媒体
   - RULE-SET,GlobalMedia,国际媒体
   - RULE-SET,Streaming,国际媒体
-
-  # 流媒体（国内）
-  - RULE-SET,StreamingCN,DIRECT
 
   # Emby
   - RULE-SET,Emby,Emby服务
@@ -536,11 +541,6 @@ rules:
   - RULE-SET,Privacy,REJECT
   - RULE-SET,Malware,REJECT
   - RULE-SET,Tracker,REJECT
-
-  # 基础直连
-  - RULE-SET,Direct,DIRECT
-  - RULE-SET,Lan,DIRECT
-  - RULE-SET,ChinaIP,DIRECT
 
   # GEOIP 兜底
   - GEOIP,CN,DIRECT
