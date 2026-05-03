@@ -473,7 +473,7 @@ rule-providers:
   Lan:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Lan.list
+    url: https://raw.githubusercontent.com/mphin/ACL4SSR/main/rules/LocalAreaNetwork.list
     path: ./rules/Lan.list
     interval: 86400
 
