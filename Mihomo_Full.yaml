@@ -195,28 +195,28 @@ rule-providers:
   OpenAi:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/OpenAI/OpenAI.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.list
     path: ./rules/OpenAi.list
     interval: 86400
 
   Claude:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Claude/Claude.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.list
     path: ./rules/Claude.list
     interval: 86400
 
   Gemini:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/GoogleAI/GoogleAI.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GoogleAI/GoogleAI.list
     path: ./rules/Gemini.list
     interval: 86400
 
   BingAI:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Bing/Bing.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.list
     path: ./rules/BingAI.list
     interval: 86400
 
@@ -224,56 +224,56 @@ rule-providers:
   Youtube:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/YouTube/YouTube.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.list
     path: ./rules/Youtube.list
     interval: 86400
 
   GlobalMedia:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/GlobalMedia/GlobalMedia.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.list
     path: ./rules/GlobalMedia.list
     interval: 86400
 
   Netflix:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Netflix/Netflix.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.list
     path: ./rules/Netflix.list
     interval: 86400
 
   Disney:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Disney/Disney.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.list
     path: ./rules/Disney.list
     interval: 86400
 
   HBO:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/HBO/HBO.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.list
     path: ./rules/HBO.list
     interval: 86400
 
   Hulu:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Hulu/Hulu.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Hulu/Hulu.list
     path: ./rules/Hulu.list
     interval: 86400
 
   PrimeVideo:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/PrimeVideo/PrimeVideo.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.list
     path: ./rules/PrimeVideo.list
     interval: 86400
 
   Spotify:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Spotify/Spotify.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.list
     path: ./rules/Spotify.list
     interval: 86400
 
@@ -287,14 +287,14 @@ rule-providers:
   Streaming:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Streaming/Streaming.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Streaming/Streaming.list
     path: ./rules/Streaming.list
     interval: 86400
 
   StreamingCN:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/StreamingCN/StreamingCN.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/StreamingCN/StreamingCN.list
     path: ./rules/StreamingCN.list
     interval: 86400
 
@@ -302,49 +302,49 @@ rule-providers:
   Telegram:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Telegram/Telegram.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.list
     path: ./rules/Telegram.list
     interval: 86400
 
   Twitter:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Twitter/Twitter.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.list
     path: ./rules/Twitter.list
     interval: 86400
 
   TikTok:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/TikTok/TikTok.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.list
     path: ./rules/TikTok.list
     interval: 86400
 
   Instagram:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Instagram/Instagram.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.list
     path: ./rules/Instagram.list
     interval: 86400
 
   Facebook:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Facebook/Facebook.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.list
     path: ./rules/Facebook.list
     interval: 86400
 
   Reddit:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Reddit/Reddit.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.list
     path: ./rules/Reddit.list
     interval: 86400
 
   Discord:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Discord/Discord.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.list
     path: ./rules/Discord.list
     interval: 86400
 
@@ -352,42 +352,42 @@ rule-providers:
   Steam:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Steam/Steam.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.list
     path: ./rules/Steam.list
     interval: 86400
 
   Epic:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Epic/Epic.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.list
     path: ./rules/Epic.list
     interval: 86400
 
   Battle:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Battle/Battle.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Battle/Battle.list
     path: ./rules/Battle.list
     interval: 86400
 
   PSN:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/PlayStation/PlayStation.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PlayStation/PlayStation.list
     path: ./rules/PSN.list
     interval: 86400
 
   Xbox:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Xbox/Xbox.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Xbox/Xbox.list
     path: ./rules/Xbox.list
     interval: 86400
 
   Nintendo:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Nintendo/Nintendo.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.list
     path: ./rules/Nintendo.list
     interval: 86400
 
@@ -395,35 +395,35 @@ rule-providers:
   Github:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/GitHub/GitHub.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.list
     path: ./rules/Github.list
     interval: 86400
 
   GitLab:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/GitLab/GitLab.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitLab/GitLab.list
     path: ./rules/GitLab.list
     interval: 86400
 
   Docker:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Docker/Docker.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Docker/Docker.list
     path: ./rules/Docker.list
     interval: 86400
 
   NPM:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/NPM/NPM.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NPM/NPM.list
     path: ./rules/NPM.list
     interval: 86400
 
   PyPI:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/PyPI/PyPI.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PyPI/PyPI.list
     path: ./rules/PyPI.list
     interval: 86400
 
@@ -431,7 +431,7 @@ rule-providers:
   BankUS:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Bank/US.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bank/US.list
     path: ./rules/BankUS.list
     interval: 86400
 
@@ -439,21 +439,21 @@ rule-providers:
   Privacy:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Privacy/Privacy.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Privacy/Privacy.list
     path: ./rules/Privacy.list
     interval: 86400
 
   Malware:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Malware/Malware.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Malware/Malware.list
     path: ./rules/Malware.list
     interval: 86400
 
   Tracker:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/Tracker/Tracker.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Tracker/Tracker.list
     path: ./rules/Tracker.list
     interval: 86400
 
@@ -461,7 +461,7 @@ rule-providers:
   ChinaIP:
     type: http
     behavior: ipcidr
-    url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/ChinaIP/ChinaIP.list
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaIP/ChinaIP.list
     path: ./rules/ChinaIP.list
     interval: 86400
 
