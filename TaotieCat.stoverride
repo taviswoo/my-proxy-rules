@@ -1,6 +1,7 @@
 # ==========================================
 # 覆写：代理组（Clash / Mihomo / Stash 通用）
 # ==========================================
+name: TaotieCat 分流
 proxy-groups:
   - name: 全球加速
     type: select
