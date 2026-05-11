@@ -116,6 +116,16 @@ proxy-groups:
     tolerance: 100
     lazy: true
 
+  - name: 美国家宽
+    type: select
+    include-all: true
+    use:
+      - Airport
+    remnawave:
+      include-proxies: false
+    filter: "US-R-"
+    url: https://cp.cloudflare.com/generate_204
+
   - name: 狮城节点
     type: url-test
     include-all: true
@@ -154,16 +164,6 @@ proxy-groups:
     interval: 300
     tolerance: 100
     lazy: true
-
-  - name: 美国家宽
-    type: select
-    include-all: true
-    use:
-      - Airport
-    remnawave:
-      include-proxies: false
-    filter: "US-R-"
-    url: https://cp.cloudflare.com/generate_204
 
 # ==========================================
 # 覆写：规则提供（Blackmatrix7 + 自定义）
