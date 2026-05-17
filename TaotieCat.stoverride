@@ -165,6 +165,18 @@ proxy-groups:
     tolerance: 100
     lazy: true
 
+  - name: 马来节点
+    type: url-test
+    include-all: true
+    use:
+      - Airport
+    remnawave:
+      include-proxies: false
+    filter: "马来|MY|(?i)Malaysia"
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
 # ==========================================
 # 覆写：规则提供（Blackmatrix7 + 自定义）
 # ==========================================
