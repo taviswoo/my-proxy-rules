@@ -44,7 +44,6 @@ rules+:
   - DOMAIN,cfptv.ii00.cc,Emby服务
   - DOMAIN,cfgtv.ii00.cc,Emby服务
 #墨云阁
-  - DOMAIN,myg.mobaiemby.site,Emby服务
   - DOMAIN-SUFFIX, mobaiemby.site,Emby服务
 #二次元
   - DOMAIN,media.nijigem.by,Emby服务
