@@ -1,5 +1,5 @@
-#!name=Surge-CN Policy Override
-#!desc=Rabbit-Spec Surge-CN 分流策略组 + 分流规则覆写模块
+name=Surge Policy Override
+desc=Rabbit-Spec Surge 分流策略组 + 分流规则覆写模块
 
 [Proxy Group]
 
