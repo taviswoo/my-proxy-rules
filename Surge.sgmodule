@@ -1,5 +1,5 @@
-#name=Surge Policy Override
-#desc=Rabbit-Spec Surge 分流策略组 + 分流规则覆写模块
+name=Surge Policy Override
+desc=Rabbit-Spec Surge 分流策略组 + 分流规则覆写模块
 
 [Proxy Group]
 
@@ -30,14 +30,12 @@
 智能助理 = select, 节点选择, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, icon-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/ChatGPT.png
 
 # 外部节点（自动分组）
-🇭🇰 香港节点 = smart, include-other-group=✈️ 我的节点, policy-regex-filter=(🇭🇰|香港|Hong|HK), hidden=1
-🇺🇸 美国节点 = smart, include-other-group=✈️ 我的节点, policy-regex-filter=(?i)^(?!US-R-).*(🇺🇸|美国|States|US), hidden=1
-🇯🇵 日本节点 = smart, include-other-group=✈️ 我的节点, policy-regex-filter=(🇯🇵|日本|Japan|JP), hidden=1
-🇩🇪 德国节点 = smart, include-other-group=✈️ 我的节点, policy-regex-filter=(🇩🇪|德国|Germany|DE), hidden=1
-🇸🇬 新加坡节点 = smart, include-other-group=✈️ 我的节点, policy-regex-filter=(🇸🇬|新加坡|Singapore|SG), hidden=1
-🇺🇸 美国家宽 = smart, include-other-group=✈️ 我的节点, policy-regex-filter=^(US-R-), hidden=1
-
-✈️ 我的节点 = select, policy-path=你的订阅地址, icon-url=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Conf/icon/Proxy.png
+🇭🇰 香港节点 = smart, include-other-group=Proxy, policy-regex-filter=(🇭🇰|香港|Hong|HK), hidden=1
+🇺🇸 美国节点 = smart, include-other-group=Proxy, policy-regex-filter=(?i)^(?!US-R-).*(🇺🇸|美国|States|US), hidden=1
+🇯🇵 日本节点 = smart, include-other-group=Proxy, policy-regex-filter=(🇯🇵|日本|Japan|JP), hidden=1
+🇩🇪 德国节点 = smart, include-other-group=Proxy, policy-regex-filter=(🇩🇪|德国|Germany|DE), hidden=1
+🇸🇬 新加坡节点 = smart, include-other-group=Proxy, policy-regex-filter=(🇸🇬|新加坡|Singapore|SG), hidden=1
+🇺🇸 美国家宽 = smart, include-other-group=Proxy, policy-regex-filter=^(US-R-), hidden=1
 
 [Rule]
 RULE-SET,https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list,智能助理
