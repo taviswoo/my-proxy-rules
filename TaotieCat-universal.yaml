@@ -467,7 +467,7 @@ rules:
 
   - RULE-SET,OpenAi,AI分流
   - RULE-SET,Claude,AI分流
-  - RULE-SET,Gemini,美国节点
+  - RULE-SET,Gemini,AI分流
   - RULE-SET,BingAI,AI分流
   - RULE-SET,Copilot,AI分流
 
