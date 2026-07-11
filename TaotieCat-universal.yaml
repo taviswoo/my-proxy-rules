@@ -1,0 +1,507 @@
+# ==========================================
+# TaotieCat 通用覆写文件
+# 适用：Mihomo / Clash Meta 及支持 YAML 覆写合并的客户端
+# 依赖基础配置中的 proxy-providers.Airport
+# ==========================================
+
+proxy-groups:
+  - name: 全球加速
+    type: select
+    proxies:
+      - 自动选择
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 美国家宽
+      - 狮城节点
+      - 德国节点
+      - 马来节点
+      - 韩国节点
+
+  - name: 国际媒体
+    type: select
+    proxies:
+      - 自动选择
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 美国家宽
+      - 狮城节点
+      - 德国节点
+      - 马来节点
+      - 韩国节点
+
+  - name: Emby服务
+    type: select
+    proxies:
+      - 自动选择
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 狮城节点
+      - 马来节点
+      - 德国节点
+
+  - name: AI分流
+    type: select
+    proxies:
+      - 美国家宽
+      - 美国节点
+      - 自动选择
+
+  - name: 社交链路
+    type: select
+    proxies:
+      - 自动选择
+      - 香港节点
+      - 美国节点
+      - 日本节点
+      - 狮城节点
+      - 德国节点
+      - 马来节点
+      - 韩国节点
+
+  - name: 自动选择
+    type: url-test
+    include-all: true
+    use:
+      - Airport
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+
+  - name: 香港节点
+    type: url-test
+    include-all: true
+    use:
+      - Airport
+    filter: "港|HK|(?i)Hong"
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+
+  - name: 日本节点
+    type: url-test
+    include-all: true
+    use:
+      - Airport
+    filter: "日|东京|JP|(?i)Japan"
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+
+  - name: 美国节点
+    type: url-test
+    include-all: true
+    use:
+      - Airport
+    filter: "(?i)^(?!.*US-R-).*(美|US|States|American)"
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+
+  - name: 美国家宽
+    type: select
+    include-all: true
+    use:
+      - Airport
+    filter: "US-R-"
+    url: https://cp.cloudflare.com/generate_204
+
+  - name: 狮城节点
+    type: url-test
+    include-all: true
+    use:
+      - Airport
+    filter: "新|坡|SG|(?i)Singapore"
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+
+  - name: 德国节点
+    type: url-test
+    include-all: true
+    use:
+      - Airport
+    filter: "德|DE|(?i)Germany"
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+
+  - name: 韩国节点
+    type: url-test
+    include-all: true
+    use:
+      - Airport
+    filter: "韩|KR|(?i)Korea|Seoul"
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+
+  - name: 马来节点
+    type: url-test
+    include-all: true
+    use:
+      - Airport
+    filter: "马来|MY|(?i)Malaysia"
+    url: https://cp.cloudflare.com/generate_204
+    interval: 300
+    tolerance: 100
+    lazy: true
+
+rule-providers:
+  OpenAi:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml
+    path: ./rules/OpenAi.yaml
+    interval: 86400
+
+  Claude:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml
+    path: ./rules/Claude.yaml
+    interval: 86400
+
+  Gemini:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/Gemini/Gemini.yaml
+    path: ./rules/Gemini.yaml
+    interval: 86400
+
+  Copilot:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/Copilot/Copilot.yaml
+    path: ./rules/Copilot.yaml
+    interval: 86400
+
+  BingAI:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Bing/Bing.yaml
+    path: ./rules/BingAI.yaml
+    interval: 86400
+
+  Youtube:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    path: ./rules/Youtube.yaml
+    interval: 86400
+
+  GlobalMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml
+    path: ./rules/GlobalMedia.yaml
+    interval: 86400
+
+  ChinaMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    path: ./rules/ChinaMedia.yaml
+    interval: 86400
+
+  Netflix:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    path: ./rules/Netflix.yaml
+    interval: 86400
+
+  Disney:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
+    path: ./rules/Disney.yaml
+    interval: 86400
+
+  HBO:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HBO/HBO.yaml
+    path: ./rules/HBO.yaml
+    interval: 86400
+
+  Hulu:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Hulu/Hulu.yaml
+    path: ./rules/Hulu.yaml
+    interval: 86400
+
+  PrimeVideo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PrimeVideo/PrimeVideo.yaml
+    path: ./rules/PrimeVideo.yaml
+    interval: 86400
+
+  Spotify:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+    path: ./rules/Spotify.yaml
+    interval: 86400
+
+  Emby:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/taviswoo/my-proxy-rules/refs/heads/main/proxy-rules.list
+    path: ./rules/Emby.list
+    interval: 86400
+
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    path: ./rules/Telegram.yaml
+    interval: 86400
+
+  Twitter:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Twitter/Twitter.yaml
+    path: ./rules/Twitter.yaml
+    interval: 86400
+
+  TikTok:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+    path: ./rules/TikTok.yaml
+    interval: 86400
+
+  Instagram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Instagram/Instagram.yaml
+    path: ./rules/Instagram.yaml
+    interval: 86400
+
+  Facebook:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Facebook/Facebook.yaml
+    path: ./rules/Facebook.yaml
+    interval: 86400
+
+  Reddit:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Reddit/Reddit.yaml
+    path: ./rules/Reddit.yaml
+    interval: 86400
+
+  Discord:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Discord/Discord.yaml
+    path: ./rules/Discord.yaml
+    interval: 86400
+
+  Steam:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
+    path: ./rules/Steam.list
+    interval: 86400
+
+  Epic:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml
+    path: ./rules/Epic.yaml
+    interval: 86400
+
+  Battle:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Battle/Battle.yaml
+    path: ./rules/Battle.yaml
+    interval: 86400
+
+  PSN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PlayStation/PlayStation.yaml
+    path: ./rules/PSN.yaml
+    interval: 86400
+
+  Xbox:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Xbox/Xbox.yaml
+    path: ./rules/Xbox.yaml
+    interval: 86400
+
+  Nintendo:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Nintendo/Nintendo.yaml
+    path: ./rules/Nintendo.yaml
+    interval: 86400
+
+  Github:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.yaml
+    path: ./rules/Github.yaml
+    interval: 86400
+
+  GitLab:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitLab/GitLab.yaml
+    path: ./rules/GitLab.yaml
+    interval: 86400
+
+  Docker:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Docker/Docker.yaml
+    path: ./rules/Docker.yaml
+    interval: 86400
+
+  BankUS:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/Bank/BankUS.yaml
+    path: ./rules/BankUS.yaml
+    interval: 86400
+
+  PayPal:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/PayPal/PayPal.yaml
+    path: ./rules/PayPal.yaml
+    interval: 86400
+
+  Privacy:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Privacy/Privacy.yaml
+    path: ./rules/Privacy.yaml
+    interval: 86400
+
+  Lan:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/mphin/ACL4SSR/main/rules/LocalAreaNetwork.list
+    path: ./rules/Lan.list
+    interval: 86400
+
+rules:
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
+  - RULE-SET,Lan,DIRECT
+
+  - DOMAIN-SUFFIX,lilyemby.com,Emby服务
+  - DOMAIN,mini.jmsuper.com,Emby服务
+  - DOMAIN-SUFFIX,sfcj.org,Emby服务
+  - DOMAIN-SUFFIX,feiyue.lol,Emby服务
+  - DOMAIN-SUFFIX,wenjian.de,Emby服务
+  - DOMAIN-SUFFIX,jingzhe.pro,Emby服务
+  - DOMAIN,c1.staryuki.me,DIRECT
+  - DOMAIN,c2.staryuki.me,DIRECT
+  - DOMAIN,de2.staryuki.me,Emby服务
+  - DOMAIN,us3.staryuki.me,Emby服务
+  - DOMAIN,us4.staryuki.me,Emby服务
+  - DOMAIN,lite.cn2gias.uk,Emby服务
+  - DOMAIN,cf.emby.org,Emby服务
+  - DOMAIN,cf.xmsl.org,Emby服务
+  - DOMAIN-SUFFIX,emby.org,Emby服务
+  - DOMAIN-SUFFIX,jmsuper.com,Emby服务
+  - DOMAIN-SUFFIX,once.im,DIRECT
+  - DOMAIN,cfptv.ii00.cc,Emby服务
+  - DOMAIN,cfgtv.ii00.cc,Emby服务
+  - DOMAIN-SUFFIX,mobaiemby.site,Emby服务
+  - DOMAIN,media.nijigem.by,Emby服务
+  - DOMAIN-SUFFIX,feiniu.lol,Emby服务
+  - DOMAIN,us.younoyes.com,DIRECT
+  - DOMAIN,jp.younoyes.com,DIRECT
+  - DOMAIN,emby.younoyes.com,Emby服务
+  - DOMAIN,a.emby.my,DIRECT
+  - DOMAIN,b.emby.my,Emby服务
+  - DOMAIN,c.emby.my,日本节点
+  - DOMAIN,d.emby.my,美国节点
+  - DOMAIN,vban.xyz,Emby服务
+  - DOMAIN-SUFFIX,bangumi.ca,Emby服务
+  - DOMAIN-SUFFIX,ichinosekotomi.com,Emby服务
+  - DOMAIN,vip.nangua.de,Emby服务
+
+  - DOMAIN-SUFFIX,baidu.com,DIRECT
+  - DOMAIN-SUFFIX,tampermonkey.net,全球加速
+  - DOMAIN-SUFFIX,jsdelivr.com,全球加速
+  - DOMAIN-SUFFIX,oracle.com,DIRECT
+  - DOMAIN-KEYWORD,rhino3d,REJECT
+  - DOMAIN-KEYWORD,adobe.com,REJECT
+  - DOMAIN-SUFFIX,mcneel.com,REJECT
+  - DOMAIN-SUFFIX,enscape3d.com,REJECT
+  - DOMAIN-SUFFIX,tiktokmusic.com,全球加速
+  - DOMAIN-SUFFIX,frantech.ca,DIRECT
+  - DOMAIN-SUFFIX,namecrane.com,DIRECT
+  - DOMAIN-SUFFIX,ovh.ie,德国节点
+  - DOMAIN-SUFFIX,ovh.com,全球加速
+  - DOMAIN-SUFFIX,bero-host.de,德国节点
+  - DOMAIN-SUFFIX,spartanhost.net,DIRECT
+  - DOMAIN-SUFFIX,cock.li,全球加速
+  - DOMAIN-SUFFIX,myqnapcloud.cn,DIRECT
+  - DOMAIN-SUFFIX,qnap.com.cn,DIRECT
+  - DOMAIN-SUFFIX,nodeseek.com,全球加速
+
+  - RULE-SET,OpenAi,AI分流
+  - RULE-SET,Claude,AI分流
+  - RULE-SET,Gemini,美国节点
+  - RULE-SET,BingAI,AI分流
+  - RULE-SET,Copilot,AI分流
+
+  - RULE-SET,GlobalMedia,国际媒体
+  - RULE-SET,Youtube,国际媒体
+  - RULE-SET,Netflix,国际媒体
+  - RULE-SET,Disney,国际媒体
+  - RULE-SET,HBO,国际媒体
+  - RULE-SET,Hulu,国际媒体
+  - RULE-SET,PrimeVideo,国际媒体
+  - RULE-SET,Spotify,国际媒体
+  - RULE-SET,ChinaMedia,DIRECT
+  - RULE-SET,Emby,Emby服务
+
+  - RULE-SET,Telegram,社交链路
+  - RULE-SET,Twitter,社交链路
+  - RULE-SET,TikTok,社交链路
+  - RULE-SET,Instagram,社交链路
+  - RULE-SET,Facebook,社交链路
+  - RULE-SET,Reddit,社交链路
+  - RULE-SET,Discord,社交链路
+
+  - RULE-SET,Steam,全球加速
+  - RULE-SET,Epic,全球加速
+  - RULE-SET,Battle,全球加速
+  - RULE-SET,PSN,全球加速
+  - RULE-SET,Xbox,全球加速
+  - RULE-SET,Nintendo,全球加速
+  - RULE-SET,Github,全球加速
+  - RULE-SET,GitLab,全球加速
+  - RULE-SET,Docker,全球加速
+  - RULE-SET,BankUS,美国家宽
+  - RULE-SET,Privacy,全球加速
+  - RULE-SET,PayPal,美国家宽
+
+  - GEOIP,CN,DIRECT
+  - MATCH,全球加速
