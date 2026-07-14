@@ -403,12 +403,6 @@ rule-providers:
     interval: 86400
 
 rules:
-  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
-  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
-  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
-  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
-  - IP-CIDR,224.0.0.0/4,DIRECT,no-resolve
   - RULE-SET,Lan,DIRECT
 
   - DOMAIN-SUFFIX,lilyemby.com,Emby服务
@@ -484,7 +478,7 @@ rules:
 
   - RULE-SET,Telegram,社交链路
   - RULE-SET,Twitter,社交链路
-  - RULE-SET,TikTok,社交链路
+  - RULE-SET,TikTok,全球加速
   - RULE-SET,Instagram,社交链路
   - RULE-SET,Facebook,社交链路
   - RULE-SET,Reddit,社交链路
