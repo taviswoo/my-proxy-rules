@@ -16,7 +16,6 @@ proxy-groups:
       - 狮城节点
       - 德国节点
       - 马来节点
-      - 韩国节点
 
   - name: 国际媒体
     type: select
@@ -29,7 +28,6 @@ proxy-groups:
       - 狮城节点
       - 德国节点
       - 马来节点
-      - 韩国节点
 
   - name: Emby服务
     type: select
@@ -54,12 +52,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 香港节点
+      - 美国家宽
       - 美国节点
       - 日本节点
       - 狮城节点
       - 德国节点
       - 马来节点
-      - 韩国节点
 
   - name: 自动选择
     type: url-test
