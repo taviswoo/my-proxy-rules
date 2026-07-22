@@ -131,7 +131,7 @@ proxy-groups:
     tolerance: 100
     lazy: true
 
-      - name: 英国节点
+  - name: 英国节点
     type: url-test
     include-all: true
     use:
