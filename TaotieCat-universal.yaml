@@ -13,8 +13,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 美国家宽
-      - 狮城节点
       - 德国节点
+      - 英国节点
       - 马来节点
 
   - name: 国际媒体
@@ -25,8 +25,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 美国家宽
-      - 狮城节点
       - 德国节点
+      - 英国节点
       - 马来节点
 
   - name: Emby服务
@@ -36,7 +36,6 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 狮城节点
       - 马来节点
       - 德国节点
 
@@ -55,8 +54,8 @@ proxy-groups:
       - 美国家宽
       - 美国节点
       - 日本节点
-      - 狮城节点
       - 德国节点
+      - 英国节点
       - 马来节点
 
   - name: 自动选择
@@ -132,17 +131,17 @@ proxy-groups:
     tolerance: 100
     lazy: true
 
-  - name: 韩国节点
+      - name: 英国节点
     type: url-test
     include-all: true
     use:
       - Airport
-    filter: "韩|KR|(?i)Korea|Seoul"
+    filter: "(?i)UK|GB|Britain|London|英国|英格兰"
     url: https://cp.cloudflare.com/generate_204
     interval: 300
     tolerance: 100
     lazy: true
-
+    
   - name: 马来节点
     type: url-test
     include-all: true
