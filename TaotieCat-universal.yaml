@@ -378,6 +378,13 @@ rule-providers:
     path: ./rules/BankUS.yaml
     interval: 86400
 
+  BankUK:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/Bank/BankUK.yaml
+    path: ./rules/BankUK.yaml
+    interval: 86400
+
   PayPal:
     type: http
     behavior: classical
@@ -491,6 +498,7 @@ rules:
   - RULE-SET,GitLab,全球加速
   - RULE-SET,Docker,全球加速
   - RULE-SET,BankUS,美国家宽
+  - RULE-SET,BankUK,英国节点
   - RULE-SET,Privacy,全球加速
   - RULE-SET,PayPal,美国家宽
 
