@@ -462,6 +462,7 @@ rules:
   - DOMAIN-SUFFIX,myqnapcloud.cn,DIRECT
   - DOMAIN-SUFFIX,qnap.com.cn,DIRECT
   - DOMAIN-SUFFIX,nodeseek.com,全球加速
+  - DOMAIN-SUFFIX,equifax.com,美国家宽
 
   - RULE-SET,OpenAi,AI分流
   - RULE-SET,Claude,AI分流
