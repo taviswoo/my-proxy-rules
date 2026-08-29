@@ -15,7 +15,7 @@ proxy-groups:
       - 美国家宽
       - 德国节点
       - 英国节点
-      - 马来节点
+      - 狮城节点
 
   - name: 国际媒体
     type: select
@@ -27,7 +27,7 @@ proxy-groups:
       - 美国家宽
       - 德国节点
       - 英国节点
-      - 马来节点
+      - 狮城节点
 
   - name: Emby服务
     type: select
@@ -36,7 +36,7 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 马来节点
+      - 狮城节点
       - 德国节点
 
   - name: AI分流
@@ -56,7 +56,7 @@ proxy-groups:
       - 日本节点
       - 德国节点
       - 英国节点
-      - 马来节点
+      - 狮城节点
 
   - name: 自动选择
     type: url-test
