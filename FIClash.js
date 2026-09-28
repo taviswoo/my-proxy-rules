@@ -375,7 +375,17 @@ function main(config) {
 
   // ========== 规则 ==========
   const rules = [
-    "RULE-SET,Lan,DIRECT",
+  // ===== 强制局域网/私有地址直连（不依赖规则集）=====
+  "IP-CIDR,192.168.0.0/16,DIRECT,no-resolve",
+  "IP-CIDR,10.0.0.0/8,DIRECT,no-resolve",
+  "IP-CIDR,172.16.0.0/12,DIRECT,no-resolve",
+  "IP-CIDR,127.0.0.0/8,DIRECT,no-resolve",
+  "IP-CIDR,169.254.0.0/16,DIRECT,no-resolve",
+  "IP-CIDR,100.64.0.0/10,DIRECT,no-resolve",
+  "IP-CIDR,198.18.0.0/15,DIRECT,no-resolve",
+
+  // 原来的 Lan 规则集（保留也可以）
+  "RULE-SET,Lan,DIRECT",
 
     // Emby 自定义域名
     "DOMAIN-SUFFIX,lilyemby.com,Emby服务",
