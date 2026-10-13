@@ -28,6 +28,7 @@ proxy-groups:
       - 德国节点
       - 英国节点
       - 狮城节点
+      - 马来节点
 
   - name: Emby服务
     type: select
@@ -38,6 +39,7 @@ proxy-groups:
       - 美国节点
       - 狮城节点
       - 德国节点
+      - 马来节点
 
   - name: AI分流
     type: select
