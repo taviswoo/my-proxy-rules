@@ -104,7 +104,7 @@ proxy-groups:
     lazy: true
 
   - name: 美国家宽
-    type: select
+    type: url-test
     include-all: true
     use:
       - Airport
