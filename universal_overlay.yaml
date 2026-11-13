@@ -1,0 +1,269 @@
+# TaotieCat Mihomo universal overlay - integrated edition (2026-11-13)
+# This is a config OVERLAY, requiring proxy-providers.Airport from base config.
+# Replace (do not append) proxy-groups, rule-providers and rules arrays in the client.
+# User custom Emby upstream Emby.yaml is actually PLAIN TEXT rules: format: text is intentional.
+# Upstream Emby.yaml currently includes a whitespace typo: DOMAIN-SUFFIX, mobaiemby.site.
+# Please correct that GitHub source line to DOMAIN-SUFFIX,mobaiemby.site.
+# AIGC consolidated source is Surge classical TEXT; broad third-party domains may also match AI.
+# Financial and Apple rules are deliberately placed BEFORE AIGC.
+# PC Mihomo has no iOS include-apns option; Apple general domains use DIRECT here.
+# Automated US-R residential group can change IP; lock an actual node for bank use.
+# Custom software REJECT rules are preserved unchanged from original.
+# Keep MATCH last after the client merges this overlay.
+
+proxy-groups:
+- name: 全球加速
+  type: select
+  proxies:
+  - 自动选择
+  - 香港节点
+  - 日本节点
+  - 美国节点
+  - 美国家宽
+  - 德国节点
+  - 英国节点
+  - 狮城节点
+- name: 国际媒体
+  type: select
+  proxies:
+  - 自动选择
+  - 香港节点
+  - 日本节点
+  - 美国节点
+  - 美国家宽
+  - 德国节点
+  - 英国节点
+  - 狮城节点
+  - 马来节点
+- name: Emby服务
+  type: select
+  proxies:
+  - 自动选择
+  - 香港节点
+  - 日本节点
+  - 美国节点
+  - 狮城节点
+  - 德国节点
+  - 马来节点
+- name: AI分流
+  type: select
+  proxies:
+  - 美国家宽
+  - 美国节点
+  - 自动选择
+- name: 社交链路
+  type: select
+  proxies:
+  - 自动选择
+  - 香港节点
+  - 美国家宽
+  - 美国节点
+  - 日本节点
+  - 德国节点
+  - 英国节点
+  - 狮城节点
+- name: 自动选择
+  type: url-test
+  use:
+  - Airport
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 100
+  lazy: true
+- name: 香港节点
+  type: url-test
+  use:
+  - Airport
+  filter: (?i)港|香港|HK|Hong
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 100
+  lazy: true
+- name: 日本节点
+  type: url-test
+  use:
+  - Airport
+  filter: (?i)日|东京|JP|Japan
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 100
+  lazy: true
+- name: 美国节点
+  type: url-test
+  use:
+  - Airport
+  filter: (?i)美|US|States|American
+  exclude-filter: (?i)US-R-
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 100
+  lazy: true
+- name: 美国家宽
+  type: url-test
+  use:
+  - Airport
+  filter: (?i)US-R-
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 100
+  lazy: true
+- name: 狮城节点
+  type: url-test
+  use:
+  - Airport
+  filter: (?i)新|坡|SG|Singapore
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 100
+  lazy: true
+- name: 德国节点
+  type: url-test
+  use:
+  - Airport
+  filter: (?i)德|DE|Germany
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 100
+  lazy: true
+- name: 英国节点
+  type: url-test
+  use:
+  - Airport
+  filter: (?i)UK|GB|Britain|London|英国|英格兰
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 100
+  lazy: true
+- name: 马来节点
+  type: url-test
+  use:
+  - Airport
+  filter: (?i)马来|MY|Malaysia
+  url: https://cp.cloudflare.com/generate_204
+  interval: 300
+  tolerance: 100
+  lazy: true
+rule-providers:
+  Youtube:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/YouTube/YouTube.yaml
+    path: ./rules/Youtube.yaml
+    interval: 86400
+  Netflix:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix.yaml
+    path: ./rules/Netflix.yaml
+    interval: 86400
+  Disney:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney.yaml
+    path: ./rules/Disney.yaml
+    interval: 86400
+  Spotify:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Spotify/Spotify.yaml
+    path: ./rules/Spotify.yaml
+    interval: 86400
+  TikTok:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok.yaml
+    path: ./rules/TikTok.yaml
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram.yaml
+    path: ./rules/Telegram.yaml
+    interval: 86400
+  ChinaMedia:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMedia/ChinaMedia.yaml
+    path: ./rules/ChinaMedia.yaml
+    interval: 86400
+  GlobalMedia:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia.yaml
+    path: ./rules/GlobalMedia.yaml
+    interval: 86400
+  PayPal:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal.yaml
+    path: ./rules/PayPal.yaml
+    interval: 86400
+  Copilot:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/Copilot/Copilot.yaml
+    path: ./rules/Copilot.yaml
+    interval: 86400
+  BankUS:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/Bank/BankUS.yaml
+    path: ./rules/BankUS.yaml
+    interval: 86400
+  BankUK:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/main/Bank/BankUK.yaml
+    path: ./rules/BankUK.yaml
+    interval: 86400
+  Emby:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/taviswoo/my-proxy-rules/refs/heads/main/Emby.yaml
+    path: ./rules/Emby-custom.list
+    interval: 86400
+  Lan:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/mphin/ACL4SSR/main/rules/LocalAreaNetwork.list
+    path: ./rules/Lan.list
+    interval: 86400
+  AIGC:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Rules/AIGC.list
+    path: ./rules/AIGC.list
+    interval: 86400
+rules:
+- RULE-SET,Lan,DIRECT
+- RULE-SET,BankUS,美国家宽
+- RULE-SET,BankUK,英国节点
+- RULE-SET,PayPal,美国家宽
+- RULE-SET,Emby,Emby服务
+- RULE-SET,AIGC,AI分流
+- RULE-SET,Copilot,AI分流
+- RULE-SET,Youtube,国际媒体
+- RULE-SET,Netflix,国际媒体
+- RULE-SET,Disney,国际媒体
+- RULE-SET,Spotify,国际媒体
+- RULE-SET,Telegram,社交链路
+- RULE-SET,TikTok,全球加速
+- RULE-SET,GlobalMedia,国际媒体
+- RULE-SET,ChinaMedia,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,全球加速
